@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Article Page</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet" />
+    </head>
+
+    <body>
+        <script type="text/javascript">
+          var x= [];
+
+           
+        function add(){
+           var name = document.getElementById('name').value;
+           var des = document.getElementById('description').value;
+           localStorage.setItem("name", name);
+           localStorage.setItem("description", des);
+           window.location = "Article2.html"; 
+            }
+            </script>
+        <div class="page-header gradient">
+        <div class='container'>
+        <div class='row justify-content-center align-items-center'>
+        <div class='col-md-5'>
+        <h2>Let's Write new article</h2>
+        <br>
+        <br>
+        <form id="form_id" method="post" name="myform2">
+        <label>Article Title:</label>
+        <input type="text" name="name" id="name"/>
+        <br>
+        <br>
+        <label>Article Description:</label>
+        <input type="text" name="description" id="description"/>
+         <br>
+         <br>
+         <br>
+        <input type="button"  class='btn btn-outline-success btn-lg center'value="Submit" id="submit" onclick="add()"/>
+        </form>
+        </div>
+        <div class='col-md-5'>
+            <img src="img/Report analysis _Flatline.svg" alt="article">
+          </div>
+        </div>
+        </div>
+        </div>
+        </body>
+ </html>
